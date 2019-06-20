@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="css/reset.css">
+    <link rel="stylesheet" type="text/css" href="css/index.css">
+</head>
+
+<body>
+    <section>
+        <form class="formulario">
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome">
+            <br>
+            <br>
+            <label for="sobrenome">Sobrenome</label>
+            <input type="text" name="sobrenome" id="sobrenome">
+            <br>
+            <br>
+            <label for="idade">Idade</label>
+            <input type="text" name="idade" id="idade">
+            <br>
+            <br>
+            <button onclick="adiciona(); limparformulario()" class="salvar" id="salvar">Salvar</button>
+            <form>
+    </section>
+
+    <section>
+        <table>
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>Sobrenome</th>
+                    <th>Idade</th>
+                </tr>
+            </thead>
+            <tbody id="tabela-dados">
+            </tbody>
+        </table>
+        <br>
+        <p id="registros"></p>
+    </section>
+
+    <script type="text/javascript" src="jquery.js"></script>
+    <script type="text/javascript" src="tabela.js"></script>
+
+</body>
+
+</html>
